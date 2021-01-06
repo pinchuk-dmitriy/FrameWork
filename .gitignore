@@ -1,0 +1,7 @@
+*.db
+*.log
+/**/.idea
+/**/out
+/**/*.iml
+/**/target
+*.swp
