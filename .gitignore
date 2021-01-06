@@ -1,2 +1,18 @@
-*.iml
-/target/
+*.db
+*.log
+/target
+/bin
+/**/.idea
+/**/out
+/**/*.iml
+/**/.idea
+/**/out
+/**/*.iml
+/**/target
+*.swp
+
+# output
+/.temp
+/.tmp
+/build
+/dist
