@@ -1,7 +1,5 @@
 *.db
 *.log
-/**/.idea
-/**/out
-/**/*.iml
-/**/target
-*.swp
+.idea
+.iml
+target/
