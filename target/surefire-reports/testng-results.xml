@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="10" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="150866" started-at="2021-01-06T09:03:25 MSK" finished-at="2021-01-06T09:05:56 MSK">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="150866" started-at="2021-01-06T09:03:25 MSK" finished-at="2021-01-06T09:05:56 MSK">
+      <class name="test.UserTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.UserTest@7c16905e]" name="init" is-config="true" duration-ms="6232" started-at="2021-01-06T09:05:25 MSK" finished-at="2021-01-06T09:05:31 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="EditCityInAccount()[pri:0, instance:test.UserTest@7c16905e]" name="EditCityInAccount" duration-ms="15415" started-at="2021-01-06T09:05:31 MSK" finished-at="2021-01-06T09:05:46 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditCityInAccount -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.UserTest@7c16905e]" name="close" is-config="true" duration-ms="518" started-at="2021-01-06T09:05:46 MSK" finished-at="2021-01-06T09:05:47 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="LoginUser()[pri:0, instance:test.UserTest@7c16905e]" name="LoginUser" duration-ms="7489" started-at="2021-01-06T09:05:47 MSK" finished-at="2021-01-06T09:05:54 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginUser -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.UserTest@7c16905e]" name="close" is-config="true" duration-ms="480" started-at="2021-01-06T09:05:54 MSK" finished-at="2021-01-06T09:05:55 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="dispose()[pri:0, instance:test.UserTest@7c16905e]" name="dispose" is-config="true" duration-ms="1195" started-at="2021-01-06T09:05:55 MSK" finished-at="2021-01-06T09:05:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dispose -->
+      </class> <!-- test.UserTest -->
+      <class name="test.CartTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.CartTest@1753acfe]" name="init" is-config="true" duration-ms="8926" started-at="2021-01-06T09:03:25 MSK" finished-at="2021-01-06T09:03:34 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="AddingALotProductToCart()[pri:0, instance:test.CartTest@1753acfe]" name="AddingALotProductToCart" duration-ms="18345" started-at="2021-01-06T09:03:34 MSK" finished-at="2021-01-06T09:03:53 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingALotProductToCart -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="1100" started-at="2021-01-06T09:03:53 MSK" finished-at="2021-01-06T09:03:54 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="FAIL" signature="AddingOneProductToCart()[pri:0, instance:test.CartTest@1753acfe]" name="AddingOneProductToCart" duration-ms="10313" started-at="2021-01-06T09:03:54 MSK" finished-at="2021-01-06T09:04:04 MSK">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: <Item(name=COURT SLAM DYNAMIC2201SFA, size=36, color=Ð±ÐµÐ»ÑÐ¹, cost=5 490 Ð Ð£Ð.)>
+     but: was <Item(name=COURT SLAM DYNAMIC2201SFA, size=размер: 36, color=цвет: белый, cost=5 490 руб.)>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: <Item(name=COURT SLAM DYNAMIC2201SFA, size=36, color=Ð±ÐµÐ»ÑÐ¹, cost=5 490 Ð Ð£Ð.)>
+     but: was <Item(name=COURT SLAM DYNAMIC2201SFA, size=размер: 36, color=цвет: белый, cost=5 490 руб.)>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+at test.CartTest.AddingOneProductToCart(CartTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingOneProductToCart -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="465" started-at="2021-01-06T09:04:05 MSK" finished-at="2021-01-06T09:04:05 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="FAIL" signature="ConsoteManager()[pri:0, instance:test.CartTest@1753acfe]" name="ConsoteManager" duration-ms="6707" started-at="2021-01-06T09:04:05 MSK" finished-at="2021-01-06T09:04:12 MSK">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="retailcrm-consultant-app"]/div[1]/div/div/div"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DRSERU0', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2c69da1bd40a64c304434fb51045f113
+*** Element info: {Using=xpath, value=//*[@id="retailcrm-consultant-app"]/div[1]/div/div/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="retailcrm-consultant-app"]/div[1]/div/div/div"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DRSERU0', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2c69da1bd40a64c304434fb51045f113
+*** Element info: {Using=xpath, value=//*[@id="retailcrm-consultant-app"]/div[1]/div/div/div}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at page.LacosteHomePage.writeMessageInConsole(LacosteHomePage.java:60)
+at test.CartTest.ConsoteManager(CartTest.java:146)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConsoteManager -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="503" started-at="2021-01-06T09:04:13 MSK" finished-at="2021-01-06T09:04:13 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="DeletingProductFromBag()[pri:0, instance:test.CartTest@1753acfe]" name="DeletingProductFromBag" duration-ms="11529" started-at="2021-01-06T09:04:13 MSK" finished-at="2021-01-06T09:04:25 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletingProductFromBag -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="472" started-at="2021-01-06T09:04:25 MSK" finished-at="2021-01-06T09:04:25 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="PlacingAnOrderForGoodsWithIncorrectData()[pri:0, instance:test.CartTest@1753acfe]" name="PlacingAnOrderForGoodsWithIncorrectData" duration-ms="14789" started-at="2021-01-06T09:04:25 MSK" finished-at="2021-01-06T09:04:40 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacingAnOrderForGoodsWithIncorrectData -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="470" started-at="2021-01-06T09:04:40 MSK" finished-at="2021-01-06T09:04:41 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="FAIL" signature="ProductFilteringBySelectedCategories()[pri:0, instance:test.CartTest@1753acfe]" name="ProductFilteringBySelectedCategories" duration-ms="11649" started-at="2021-01-06T09:04:41 MSK" finished-at="2021-01-06T09:04:52 MSK">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/catalog/paris_polo_muzhchiny/paris_polo_regular_fit_color_AE0/" class="product-main">...</a> is not clickable at point (693, 562). Other element would receive the click: <img src="https://cdn.retailrocket.net/api/1.0/partner/5b44733997a525089c03a156/item/254569/picture/?format=png&amp;width=500&amp;height=500&amp;scale=both" alt="" onerror="retailrocket.widget.hideProduct(this)">
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DRSERU0', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2c69da1bd40a64c304434fb51045f113]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/catalog/paris_polo_muzhchiny/paris_polo_regular_fit_color_AE0/" class="product-main">...</a> is not clickable at point (693, 562). Other element would receive the click: <img src="https://cdn.retailrocket.net/api/1.0/partner/5b44733997a525089c03a156/item/254569/picture/?format=png&amp;width=500&amp;height=500&amp;scale=both" alt="" onerror="retailrocket.widget.hideProduct(this)">
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DRSERU0', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2c69da1bd40a64c304434fb51045f113
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at page.LacosteMenProductsPage.goToFirstProductOnPage(LacosteMenProductsPage.java:41)
+at test.CartTest.ProductFilteringBySelectedCategories(CartTest.java:130)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductFilteringBySelectedCategories -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="414" started-at="2021-01-06T09:04:53 MSK" finished-at="2021-01-06T09:04:54 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="WriteIncorrectCityInDeliveryAdress()[pri:0, instance:test.CartTest@1753acfe]" name="WriteIncorrectCityInDeliveryAdress" duration-ms="11978" started-at="2021-01-06T09:04:54 MSK" finished-at="2021-01-06T09:05:06 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteIncorrectCityInDeliveryAdress -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="4951" started-at="2021-01-06T09:05:06 MSK" finished-at="2021-01-06T09:05:11 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="WriteIncorrectPromocode()[pri:0, instance:test.CartTest@1753acfe]" name="WriteIncorrectPromocode" duration-ms="12422" started-at="2021-01-06T09:05:11 MSK" finished-at="2021-01-06T09:05:23 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteIncorrectPromocode -->
+        <test-method status="PASS" signature="close()[pri:0, instance:test.CartTest@1753acfe]" name="close" is-config="true" duration-ms="461" started-at="2021-01-06T09:05:23 MSK" finished-at="2021-01-06T09:05:23 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="dispose()[pri:0, instance:test.CartTest@1753acfe]" name="dispose" is-config="true" duration-ms="1391" started-at="2021-01-06T09:05:23 MSK" finished-at="2021-01-06T09:05:25 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dispose -->
+      </class> <!-- test.CartTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
