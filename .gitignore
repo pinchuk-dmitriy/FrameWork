@@ -1,5 +1,2 @@
-*.db
-*.log
-.idea
-.iml
+*.iml
 target/
