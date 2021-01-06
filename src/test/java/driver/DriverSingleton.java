@@ -19,6 +19,7 @@ public class DriverSingleton {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
+                case "chrome":
                 default:
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
