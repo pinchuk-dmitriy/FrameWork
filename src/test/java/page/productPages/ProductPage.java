@@ -1,63 +1,64 @@
-package page;
+package page.productPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import page.AbstractPage;
 import service.TestDataReader;
 
-public class LacosteProductPage extends AbstractPage {
+public class ProductPage extends AbstractPage {
     private static final String PAGE_LINK = TestDataReader.getTestData("test.data.first.link");
 
-    @FindBy(xpath = "//*[@id=\"js-sizes\"]/div[2]/a[2]")
+    @FindBy(xpath = "//*[@id='js-sizes']/div[2]/a[2]")
     private WebElement productSize;
 
-    @FindBy(xpath = "//*[@id=\"add-to-cartspan\"]/button[1]")
+    @FindBy(xpath = "//*[@id='add-to-cartspan']/button[1]")
     private WebElement addProductToBagButton;
 
-    @FindBy(xpath = "//*[@id=\"atc-ctn\"]/div/section[2]/a")
+    @FindBy(xpath = "//*[@class='atc-cta-show-cart']")
     private WebElement goToBagButton;
 
-    @FindBy(xpath = "//*[@id=\"js-sku-product\"]/div/section/div/div/div[4]/div/div[2]/div/div[1]/ul/li[1]/a")
+    @FindBy(xpath = "//*[@id='js-sku-product']/div/section/div/div/div[4]/div/div[2]/div/div[1]/ul/li[1]/a")
     private WebElement deliveryButton;
 
-    @FindBy(xpath = "//*[@id=\"js-sku-product\"]/div/section[1]/div/div/div[2]/div/div/div/h1/span")
+    @FindBy(xpath = "//*[@class='sku-product-name']/span")
     private WebElement productName;
 
 
-    public LacosteProductPage(WebDriver driver)
+    public ProductPage(WebDriver driver)
     {
         super(driver);
     }
 
     @Override
-    protected LacosteProductPage openPage() {
+    protected ProductPage openPage() {
         return this;
     }
 
-    public LacosteProductPage selectProductSize()
+    public ProductPage selectProductSize()
     {
         waitUntilElementIsClickableAndClickAvoidModalWindow(productSize);
         productSize.click();
         return this;
     }
 
-    public LacosteProductPage addProductToBag(){
+    public ProductPage addProductToBag(){
         waitUntilElementIsClickable(addProductToBagButton);
         addProductToBagButton.click();
         return this;
     }
 
-    public LacosteBagPage goToBag()
+    public BagPage goToBag()
     {
         waitUntilVisibilityOf(goToBagButton);
         goToBagButton.click();
-        return new LacosteBagPage(driver);
+        return new BagPage(driver);
     }
 
-    public LacosteDeliveryPage goToDeliveryPage(){
+    public DeliveryPage goToDeliveryPage(){
         waitUntilElementIsClickable(deliveryButton);
         deliveryButton.click();
-        return new LacosteDeliveryPage(driver);
+        return new DeliveryPage(driver);
     }
 
     public String nameRightFiltration(){

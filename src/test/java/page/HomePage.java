@@ -4,56 +4,59 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import page.productPages.CatalogProductsPage;
+import page.productPages.SearchResultPage;
+import page.userPages.LoginPage;
 
-public class LacosteHomePage extends AbstractPage {
+public class HomePage extends AbstractPage {
     private static final String HOMEPAGE_URL = "https://lacoste.ru/";
 
-    @FindBy(xpath = "//*[@id=\"search-render\"]/form/input[1]")
+    @FindBy(xpath = "//*[@itemprop='query-input']")
     private WebElement searchField;
 
-    @FindBy(xpath = "//*[@id=\"topbar\"]/div/ul[3]/li[3]/section/a")
+    @FindBy(xpath = "//*[@class='no-submenu topbar-item']")
     private WebElement goToLoginPageButton;
 
-    @FindBy(xpath = "//*[@id=\"sidenav\"]/div/div/ul[1]/li[1]/section/a/span")
+    @FindBy(xpath = "//*[@id='sidenav']/div/div/ul[1]/li[1]/section/a/span")
     private WebElement menProductsButton;
 
-    @FindBy(xpath = "//*[@id=\"sidenav\"]/div/div/ul[1]/li[1]/section/div/div/div[1]/ul/li[1]/ul/li[5]/h4/a")
+    @FindBy(xpath = "//*[@href='/catalog/paris_polo_muzhchiny/']")
     private WebElement parisPoloClothes;
 
-    @FindBy(xpath = "//*[@class=\"consultant-icon\"]")
+    @FindBy(xpath = "//*[@class='consultant-icon']/div")
     private WebElement chatButton;
 
-    @FindBy(xpath = "//*[@id=\"retailcrm-consultant-app\"]/div[2]/div[3]/div/textarea")
+    @FindBy(xpath = "//*[@class='form__input-area']")
     private WebElement chatTextField;
 
-    @FindBy(xpath = "//*[@id=\"retailcrm-consultant-app\"]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div[1]/div")
+    @FindBy(xpath = "//*[@class='message-content']")
     private WebElement writedMessage;
 
-    public LacosteHomePage(WebDriver driver) { super(driver); }
+    public HomePage(WebDriver driver) { super(driver); }
 
-    public LacosteHomePage openPage()
+    public HomePage openPage()
     {
         driver.navigate().to(HOMEPAGE_URL);
         waitUntilAjaxCompleted();
         return this;
     }
 
-    public LacosteSearchResultPage searchProduct(String request) {
+    public SearchResultPage searchProduct(String request) {
         searchField.sendKeys(request);
         searchField.sendKeys(Keys.ENTER);
-        return new LacosteSearchResultPage(driver);
+        return new SearchResultPage(driver);
     }
 
-    public LacosteLoginPage goToLoginPage(){
+    public LoginPage goToLoginPage(){
         goToLoginPageButton.click();
-        return new LacosteLoginPage(driver);
+        return new LoginPage(driver);
     }
 
-    public LacosteMenProductsPage goToMansProducts(){
+    public CatalogProductsPage goToMansProducts(){
         menProductsButton.click();
         waitUntilVisibilityOf(parisPoloClothes);
         parisPoloClothes.click();
-        return new LacosteMenProductsPage(driver);
+        return new CatalogProductsPage(driver);
     }
 
     public boolean writeMessageInConsole(String message){

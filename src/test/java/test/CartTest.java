@@ -2,7 +2,7 @@ package test;
 
 import model.User;
 import org.testng.annotations.Test;
-import page.LacosteHomePage;
+import page.HomePage;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -17,7 +17,7 @@ public class CartTest extends TestBase {
     public void AddingOneProductToCart() {
         Item expectedItem = ProductCreater.withCredentialsFromProperty("first");
 
-        Item item = new LacosteHomePage(driver)
+        Item item = new HomePage(driver)
                 .openPage()
                 .searchProduct(expectedItem.getName())
                 .selectSearchedProduct()
@@ -34,7 +34,7 @@ public class CartTest extends TestBase {
         User testUser = UserCreater.withCredentialsFromProperty();
         Item expectedItem = ProductCreater.withCredentialsFromProperty("first");
         boolean resultOfTest = true;
-        boolean resultOfPlacingGoods = new LacosteHomePage(driver)
+        boolean resultOfPlacingGoods = new HomePage(driver)
                 .openPage()
                 .goToLoginPage()
                 .logInAccount(testUser)
@@ -56,7 +56,7 @@ public class CartTest extends TestBase {
         Item expectedItem = ProductCreater.withCredentialsFromProperty("first");
         boolean resultOfTest = true;
 
-        boolean nullBagOrNot = new LacosteHomePage(driver)
+        boolean nullBagOrNot = new HomePage(driver)
                 .openPage()
                 .searchProduct(expectedItem.getName())
                 .selectSearchedProduct()
@@ -74,7 +74,7 @@ public class CartTest extends TestBase {
         Item expectedItem = ProductCreater.withCredentialsFromProperty("first");
         boolean resultOfTest = false;
 
-        boolean priceBagAndItemPrice = new LacosteHomePage(driver)
+        boolean priceBagAndItemPrice = new HomePage(driver)
                 .openPage()
                 .searchProduct(expectedItem.getName())
                 .selectSearchedProduct()
@@ -92,7 +92,7 @@ public class CartTest extends TestBase {
         Item expectedItem = ProductCreater.withCredentialsFromProperty("first");
         boolean resultOfTest = true;
 
-        boolean correctPromocodeOrNot = new LacosteHomePage(driver)
+        boolean correctPromocodeOrNot = new HomePage(driver)
                 .openPage()
                 .searchProduct(expectedItem.getName())
                 .selectSearchedProduct()
@@ -109,7 +109,7 @@ public class CartTest extends TestBase {
         Item expectedItem = ProductCreater.withCredentialsFromProperty("first");
         boolean resultOfTest = true;
 
-        boolean correctCityOrNot = new LacosteHomePage(driver)
+        boolean correctCityOrNot = new HomePage(driver)
                 .openPage()
                 .searchProduct(expectedItem.getName())
                 .selectSearchedProduct()
@@ -123,7 +123,7 @@ public class CartTest extends TestBase {
     public void ProductFilteringBySelectedCategories() {
         Item expectedItem = ProductCreater.withCredentialsFromProperty("second");
 
-        String nameOfTheFilteredProduct = new LacosteHomePage(driver)
+        String nameOfTheFilteredProduct = new HomePage(driver)
                 .openPage()
                 .goToMansProducts()
                 .selectCategories()
@@ -138,7 +138,7 @@ public class CartTest extends TestBase {
         User testUser = UserCreater.withCredentialsFromProperty();
         boolean resultOfTest = true;
 
-        boolean resultOfPlacingGoods = new LacosteHomePage(driver)
+        boolean resultOfPlacingGoods = new HomePage(driver)
                 .openPage()
                 .goToLoginPage()
                 .logInAccount(testUser)

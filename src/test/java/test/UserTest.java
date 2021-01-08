@@ -2,7 +2,7 @@ package test;
 
 import model.User;
 import org.testng.annotations.Test;
-import page.LacosteHomePage;
+import page.HomePage;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -14,7 +14,7 @@ public class UserTest extends TestBase {
     @Test
     public void LoginUser() {
         User testUser = UserCreater.withCredentialsFromProperty();
-        String resultOfTest = new LacosteHomePage(driver)
+        String resultOfTest = new HomePage(driver)
                 .openPage()
                 .goToLoginPage()
                 .logInAccount(testUser)
@@ -28,7 +28,7 @@ public class UserTest extends TestBase {
         User testUser = UserCreater.withCredentialsFromProperty();
         String newCityName = "Москва";
         boolean rightResult = true;
-        boolean resultOfTest = new LacosteHomePage(driver)
+        boolean resultOfTest = new HomePage(driver)
                 .openPage()
                 .goToLoginPage()
                 .logInAccount(testUser)

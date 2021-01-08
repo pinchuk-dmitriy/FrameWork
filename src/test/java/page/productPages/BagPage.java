@@ -1,4 +1,4 @@
-package page;
+package page.productPages;
 
 import model.Item;
 import org.openqa.selenium.By;
@@ -7,47 +7,49 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import page.AbstractPage;
+import page.userPages.OrderingPage;
 
 import static util.Resolver.resolveTemplate;
 
-public class LacosteBagPage extends AbstractPage {
+public class BagPage extends AbstractPage {
     public static final String HOMEPAGE_URL = "https://www.calvinklein.us/AjaxOrderItemDisplayView";
 
-    String itemNameTemplate = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/div[2]/a";
-    String itemCostTemplate = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/div[2]/div[2]/div/span[2]";
-    String itemSizeTemplate = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/div[2]/div[1]/div[2]";
-    String itemColorTemplate = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/div[2]/div[1]/div[1]";
+    String itemNameTemplate = "//*[@class='cart-product-name']";
+    String itemCostTemplate = "//*[@class='cart-sale-price']";
+    String itemSizeTemplate = "//*[@class='item-size']";
+    String itemColorTemplate = "//*[@class='item-color']";
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[2]/div[1]/div[2]/a")
+    @FindBy(xpath = "//*[@class='btn btn-full btn-new btn-checkout btngocheckout js-validate-cart']")
     private WebElement orderingButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/ul/li/span")
+    @FindBy(xpath = "//*[@class='js-remove-lineitem cart-product-action']")
     private WebElement deleteItemButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/h3")
+    @FindBy(xpath = "//*[@class='cart-empty-title']")
     private WebElement nullBagLabel;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/div[2]/div[3]/select")
+    @FindBy(xpath = "//*[@class='cart-product-quantity']/select")
     private WebElement selectManyProductsButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/section/div/div/div[2]/div[3]/select/option[2]")
+    @FindBy(xpath = "//*[@value='2']")
     private WebElement selectTwoProductsButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[2]/div[1]/div[1]/div/ul/li[4]/span[2]")
+    @FindBy(xpath = "//*[@class='cart-price-total']/span[2]")
     private WebElement priceOfProducts;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/form/div/input")
+    @FindBy(xpath = "//*[@class='checkout-input js-field']")
     private WebElement writePromocodeField;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div/a")
+    @FindBy(xpath = "//*[@class='promocode-message__delete']")
     private WebElement canselFailButton;
 
     @Override
-    protected LacosteBagPage openPage() {
+    protected BagPage openPage() {
         return this;
     }
 
-    public LacosteBagPage(WebDriver driver){
+    public BagPage(WebDriver driver){
         super(driver);
         PageFactory.initElements(driver, this);
     }
@@ -66,14 +68,14 @@ public class LacosteBagPage extends AbstractPage {
         return Item.of(name, size, color, cost);
     }
 
-    public LacosteOrderingPage goToOrderingPage(){
+    public OrderingPage goToOrderingPage(){
         orderingButton.click();
-        return new LacosteOrderingPage(driver);
+        return new OrderingPage(driver);
     }
 
-    public LacosteBagPage deleteItem(){
+    public BagPage deleteItem(){
         deleteItemButton.click();
-        return new LacosteBagPage(driver);
+        return new BagPage(driver);
     }
 
     public boolean checkIsNullBag(){
@@ -81,11 +83,11 @@ public class LacosteBagPage extends AbstractPage {
         return nullBagLabel.isDisplayed();
     }
 
-    public LacosteBagPage addManyProducts(){
+    public BagPage addManyProducts(){
         selectManyProductsButton.click();
         waitUntilVisibilityOf(selectTwoProductsButton);
         selectTwoProductsButton.click();
-        return new LacosteBagPage(driver);
+        return new BagPage(driver);
     }
 
     public boolean equalItemPriceAndBagPrice(String itemCost){

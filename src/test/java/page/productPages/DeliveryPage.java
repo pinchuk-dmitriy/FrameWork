@@ -1,21 +1,22 @@
-package page;
+package page.productPages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import page.AbstractPage;
 
-public class LacosteDeliveryPage extends AbstractPage {
+public class DeliveryPage extends AbstractPage {
 
-    @FindBy(xpath = "//*[@class=\"cladr__input\"]")
+    @FindBy(xpath = "//*[@class='cladr__input']")
     private WebElement cityField;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div/div[4]/div/div[2]")
+    @FindBy(xpath = "//*[@class='delivery-calculator__plug']")
     private WebElement stateCityField;
 
-    public LacosteDeliveryPage(WebDriver driver) { super(driver); }
+    public DeliveryPage(WebDriver driver) { super(driver); }
 
-    public LacosteDeliveryPage openPage()
+    public DeliveryPage openPage()
     {
         waitUntilAjaxCompleted();
         return this;

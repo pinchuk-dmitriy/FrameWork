@@ -1,59 +1,57 @@
-package page;
+package page.userPages;
 
 import model.User;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import page.AbstractPage;
+import page.HomePage;
 
-public class LacosteLoginPage extends AbstractPage {
+public class LoginPage extends AbstractPage {
     private static final String HOMEPAGE_URL = "https://lacoste.ru/";
 
-    @FindBy(xpath = "//*[@id=\"vee-USER_LOGIN\"]/input")
+    @FindBy(xpath = "//*[@id='vee-USER_LOGIN']/input")
     private WebElement emailField;
 
-    @FindBy(xpath = "//*[@id=\"vee-USER_PASSWORD\"]/input")
+    @FindBy(xpath = "//*[@id='vee-USER_PASSWORD']/input")
     private WebElement passwordField;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div/div/div[3]/div[1]/button")
+    @FindBy(xpath = "//*[@class='column-half']/button")
     private WebElement enterButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/section/div[2]/section/section[1]/div/div/div/div[3]/span")
+    @FindBy(xpath = "//*[@class='successCall']/div[3]/span")
     private WebElement dataOfBirth;
 
-    @FindBy(xpath = "//*[@id=\"sidenav\"]/div/div/div/a")
+    @FindBy(xpath = "//*[@class='link-logo nav-ico nuxt-link-active']")
     private WebElement homePageButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/section/div[2]/section/section[1]/div/div/div/a")
+    @FindBy(xpath = "//*[@class='editLink']")
     private WebElement editButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/section/div[2]/section/section[1]/div/div/div/div[5]/span")
+    @FindBy(xpath = "//*[@class='successCall']/div[5]/span")
     private WebElement cityField;
 
-    @FindBy(xpath = "//*[@class=\"is-filled field js-field cladr__input\"]")
+    @FindBy(xpath = "//*[@class='is-filled field js-field cladr__input']")
     private WebElement nameCity;
 
-    @FindBy(xpath = "//*[@id=\"vee-changedCityValidator\"]/div[2]/div[2]/div[2]/div")
+    @FindBy(xpath = "//*[@class='cladr__variants-item']")
     private WebElement searchedCity;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/section/div[2]/section/section[1]/div/div[1]/div[2]/div/div/form/div[14]/button[1]")
+    @FindBy(xpath = "//*[@class='btn saveLink']")
     private WebElement addProtertiesButton;
 
-    @FindBy(xpath = "//*[@id=\"content-container\"]/div/div/div/div[2]/section/div[2]/section/section[1]/div/div/div/a")
+    @FindBy(xpath = "//*[@class='editLink']")
     private WebElement editProtertiesButton;
-    public LacosteLoginPage(WebDriver driver) { super(driver); }
+    public LoginPage(WebDriver driver) { super(driver); }
 
-    public LacosteLoginPage openPage()
+    public LoginPage openPage()
     {
         driver.navigate().to(HOMEPAGE_URL);
         waitUntilAjaxCompleted();
         return this;
     }
 
-    public LacosteLoginPage logInAccount(User user){
+    public LoginPage logInAccount(User user){
         waitUntilVisibilityOf(emailField);
         emailField.sendKeys(user.getEmail());
 
@@ -63,12 +61,12 @@ public class LacosteLoginPage extends AbstractPage {
         waitUntilElementIsClickable(enterButton);
         enterButton.click();
 
-        return new LacosteLoginPage(driver);
+        return new LoginPage(driver);
     }
 
-    public LacosteHomePage goToHomePage(){
+    public HomePage goToHomePage(){
         homePageButton.click();
-        return new LacosteHomePage(driver);
+        return new HomePage(driver);
     }
 
     public String checkCorrectData(){

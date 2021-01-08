@@ -1,230 +1,220 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="10" name="TestSuite" time="3.128" errors="0" skipped="0">
+<testsuite tests="10" failures="4" name="TestSuite" time="112.57" errors="0" skipped="0">
   <properties>
-    <property name="JOB_NAME" value="FrameWork"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8081/job/FrameWork/3/display/redirect?page=tests"/>
-    <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="JENKINS_HOME" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins"/>
-    <property name="HUDSON_SERVER_COOKIE" value="9ba026af7e88baf0"/>
-    <property name="POM_ARTIFACTID" value="Framework"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="POM_DISPLAYNAME" value="Framework"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="TEMP" value="C:\WINDOWS\TEMP"/>
-    <property name="NODE_LABELS" value="master"/>
-    <property name="java.runtime.version" value="11.0.9+7-LTS"/>
-    <property name="WINSW_SERVICE_ID" value="jenkins"/>
-    <property name="user.name" value="DESKTOP-DRSERU0$"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
-    <property name="ProgramFiles" value="C:\Program Files"/>
-    <property name="user.language" value="ru"/>
-    <property name="JOB_BASE_NAME" value="FrameWork"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8081/job/FrameWork/3/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#3"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="LOCALAPPDATA" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local"/>
-    <property name="java.version" value="11.0.9"/>
-    <property name="user.timezone" value="Europe/Moscow"/>
-    <property name="PROCESSOR_LEVEL" value="21"/>
-    <property name="USERNAME" value="DESKTOP-DRSERU0$"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="NODE_NAME" value="master"/>
-    <property name="BUILD_ID" value="3"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="maven.conf" value="D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="55.0"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="JRE_HOME" value="C:\Program Files (x86)\Java\jre1.8.0_261"/>
-    <property name="user.country" value="RU"/>
-    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.9"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="os.version" value="10.0"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8081/job/FrameWork/3/display/redirect"/>
-    <property name="POM_VERSION" value="1.0-SNAPSHOT"/>
-    <property name="TMP" value="C:\WINDOWS\TEMP"/>
-    <property name="path.separator" value=";"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8081/job/FrameWork/3/display/redirect?page=artifacts"/>
-    <property name="java.vm.version" value="11.0.9+7-LTS"/>
-    <property name="ADSK_3DSMAX_x64_2021" value="D:\Programms\Autodesk\3ds Max 2021\"/>
-    <property name="user.variant" value=""/>
-    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8081/job/FrameWork/display/redirect"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_271"/>
-    <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="SERVICE_ID" value="jenkins"/>
-    <property name="COMPUTERNAME" value="DESKTOP-DRSERU0"/>
-    <property name="user.script" value=""/>
-    <property name="VBOX_MSI_INSTALL_PATH" value="D:\Programms\VirtualBox\"/>
-    <property name="POM_GROUPID" value="org.example"/>
-    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-FrameWork-3"/>
-    <property name="JENKINS_SERVER_COOKIE" value="9ba026af7e88baf0"/>
-    <property name="HUDSON_URL" value="http://localhost:8081/"/>
-    <property name="ProgramData" value="C:\ProgramData"/>
-    <property name="java.version.date" value="2020-10-20"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="USERPROFILE" value="C:\WINDOWS\system32\config\systemprofile"/>
-    <property name="ADSK_3DSMAX_x64_2015" value="D:\Programms\3ds_Max_2015\3ds Max 2015\"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Trash\WINDOWS.X64_193000_db_home\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Programms\Git\cmd;C:\WINDOWS\System32\OpenSSH\;D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Autodesk\Backburner\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
-    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
-    <property name="ILMDIR" value="C:\Program Files (x86)\Common Files\Autodesk Shared\Materials\"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="APPDATA" value="C:\WINDOWS\system32\config\systemprofile\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="maven.home" value="D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
-    <property name="java.class.path" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3 C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\war\WEB-INF\lib\remoting-4.5.jar C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 50947"/>
-    <property name="CM2015DIR" value="C:\Program Files (x86)\Common Files\Autodesk Shared\Materials\"/>
-    <property name="Path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Trash\WINDOWS.X64_193000_db_home\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Programms\Git\cmd;C:\WINDOWS\System32\OpenSSH\;D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Autodesk\Backburner\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PROCESSOR_IDENTIFIER" value="AMD64 Family 21 Model 101 Stepping 1, AuthenticAMD"/>
-    <property name="java.vm.specification.version" value="11"/>
-    <property name="M2_HOME" value="D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
+    <property name="java.vm.version" value="25.271-b09"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:/Study/LABS_3_COURSE/EPAM/Framework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="OS" value="Windows_NT"/>
-    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
-    <property name="HUDSON_HOME" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins"/>
-    <property name="PATH+MAVEN" value="D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3/bin"/>
-    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="BUILD_URL" value="http://localhost:8081/job/FrameWork/3/"/>
-    <property name="SystemRoot" value="C:\WINDOWS"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\Study\LABS_3_COURSE\EPAM\Framework"/>
-    <property name="JOB_URL" value="http://localhost:8081/job/FrameWork/"/>
-    <property name="browser" value="${chrome}"/>
-    <property name="USERDOMAIN" value="WORKGROUP"/>
-    <property name="MAVEN_HOME" value="D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
+    <property name="java.runtime.version" value="1.8.0_271-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\7FE9~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BASE" value="C:\Program Files\Jenkins"/>
-    <property name="BUILD_NUMBER" value="3"/>
-    <property name="PROCESSOR_REVISION" value="6501"/>
-    <property name="JENKINS_URL" value="http://localhost:8081/"/>
-    <property name="environment" value="${dev}"/>
-    <property name="ProgramW6432" value="C:\Program Files"/>
-    <property name="windir" value="C:\WINDOWS"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:/Trash/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_271\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Дмитрий Пинчук\bin;D:\Programms\Git\mingw64\bin;D:\Programms\Git\usr\local\bin;D:\Programms\Git\usr\bin;D:\Programms\Git\usr\bin;D:\Programms\Git\mingw64\bin;D:\Programms\Git\usr\bin;C:\Users\Дмитрий Пинчук\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Trash\WINDOWS.X64_193000_db_home\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;D:\Programms\Git\cmd;C:\WINDOWS\System32\OpenSSH;D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Autodesk\Backburner;C:\Users\Дмитрий Пинчук\AppData\Local\Microsoft\WindowsApps;C:\Users\Дмитрий Пинчук\.dotnet\tools;D:\Programms\Microsoft VS Code\bin;D:\Programms\Java\bin;D:\Programms\IntelliJ IDEA\IntelliJ IDEA Community Edition 2020.2.3\bin;D:\Trash\chromedriver_win32;D:\Programms\Git\usr\bin\vendor_perl;D:\Programms\Git\usr\bin\core_perl;."/>
+    <property name="maven.conf" value="D:/Trash/apache-maven-3.6.3-bin/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:/Trash/apache-maven-3.6.3-bin/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="C:\Users\Дмитрий Пинчук"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1251"/>
-    <property name="SystemDrive" value="C:"/>
-    <property name="maven3.interceptor" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
-    <property name="WORKSPACE_TMP" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\FrameWork@tmp"/>
-    <property name="WORKSPACE" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\FrameWork"/>
-    <property name="maven3.interceptor.common" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
-    <property name="WINSW_EXECUTABLE" value="C:\Program Files\Jenkins\jenkins.exe"/>
-    <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
-    <property name="java.vendor.version" value="18.9"/>
+    <property name="user.name" value="Дмитрий Пинчук"/>
+    <property name="java.class.path" value="D:/Trash/apache-maven-3.6.3-bin/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_271\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Denvironment=dev -Dbrowser=chrome test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_271"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="environment" value="dev"/>
+    <property name="maven.home" value="D:\Trash\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.CartTest" name="AddingALotProductToCart" time="0.376">
-    <failure type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
-	at service.ProductCreater.withCredentialsFromProperty(ProductCreater.java:22)
-	at test.CartTest.AddingALotProductToCart(CartTest.java:74)
-Caused by: java.util.MissingResourceException: Can&apos;t find bundle for base name ${dev}, locale ru_RU
-	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
-	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
-	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
-	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
-	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
-	at service.TestDataReader.&lt;clinit&gt;(TestDataReader.java:7)
-	... 37 more
+  <testcase classname="test.CartTest" name="AddingALotProductToCart" time="18.656"/>
+  <testcase classname="test.CartTest" name="AddingOneProductToCart" time="10.919">
+    <failure message="
+Expected: &lt;Item(name=COURT SLAM DYNAMIC2201SFA, size=36, color=Ð±ÐµÐ»ÑÐ¹, cost=5 490 Ð Ð£Ð.)&gt;
+     but: was &lt;Item(name=COURT SLAM DYNAMIC2201SFA, size=размер: 36, color=цвет: белый, cost=5 490 руб.)&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;Item(name=COURT SLAM DYNAMIC2201SFA, size=36, color=Ð±ÐµÐ»ÑÐ¹, cost=5 490 Ð Ð£Ð.)&gt;
+     but: was &lt;Item(name=COURT SLAM DYNAMIC2201SFA, size=размер: 36, color=цвет: белый, cost=5 490 руб.)&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at test.CartTest.AddingOneProductToCart(CartTest.java:29)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@646d64ab
+    <system-out>test.data.first.name
+test.data.first.size
+test.data.first.color
+test.data.first.cost
 </system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 48441
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 06, 2021 9:35:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
   </testcase>
-  <testcase classname="test.CartTest" name="AddingOneProductToCart" time="0.32">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.ProductCreater.withCredentialsFromProperty(ProductCreater.java:22)
-	at test.CartTest.AddingOneProductToCart(CartTest.java:18)
+  <testcase classname="test.CartTest" name="ConsoteManager" time="6.729">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;consultant-icon&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DRSERU0&apos;, ip: &apos;192.168.100.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c32a3f424ecee5c07a3619b9f43f3c9c
+*** Element info: {Using=xpath, value=//*[@class=&apos;consultant-icon&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;consultant-icon&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DRSERU0&apos;, ip: &apos;192.168.100.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c32a3f424ecee5c07a3619b9f43f3c9c
+*** Element info: {Using=xpath, value=//*[@class=&apos;consultant-icon&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at page.HomePage.writeMessageInConsole(HomePage.java:63)
+	at test.CartTest.ConsoteManager(CartTest.java:146)
 </failure>
+    <system-out>test.data.user.email
+test.data.user.password
+test.data.user.dateOfBirth
+</system-out>
   </testcase>
-  <testcase classname="test.CartTest" name="ConsoteManager" time="0.314">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.UserCreater.withCredentialsFromProperty(UserCreater.java:11)
-	at test.CartTest.ConsoteManager(CartTest.java:138)
+  <testcase classname="test.CartTest" name="DeletingProductFromBag" time="10.919"/>
+  <testcase classname="test.CartTest" name="PlacingAnOrderForGoodsWithIncorrectData" time="13.264">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;field js-field cladr__input&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DRSERU0&apos;, ip: &apos;192.168.100.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c32a3f424ecee5c07a3619b9f43f3c9c
+*** Element info: {Using=xpath, value=//*[@class=&apos;field js-field cladr__input&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;field js-field cladr__input&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DRSERU0&apos;, ip: &apos;192.168.100.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c32a3f424ecee5c07a3619b9f43f3c9c
+*** Element info: {Using=xpath, value=//*[@class=&apos;field js-field cladr__input&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at page.userPages.OrderingPage.writeCityName(OrderingPage.java:25)
+	at test.CartTest.PlacingAnOrderForGoodsWithIncorrectData(CartTest.java:48)
 </failure>
+    <system-out>test.data.user.email
+test.data.user.password
+test.data.user.dateOfBirth
+test.data.first.name
+test.data.first.size
+test.data.first.color
+test.data.first.cost
+</system-out>
   </testcase>
-  <testcase classname="test.CartTest" name="DeletingProductFromBag" time="0.317">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.ProductCreater.withCredentialsFromProperty(ProductCreater.java:22)
-	at test.CartTest.DeletingProductFromBag(CartTest.java:56)
+  <testcase classname="test.CartTest" name="ProductFilteringBySelectedCategories" time="10.478">
+    <failure message="element click intercepted: Element &lt;a href=&quot;/catalog/paris_polo_muzhchiny/paris_polo_regular_fit_color_AE0/&quot; class=&quot;product-main&quot;&gt;...&lt;/a&gt; is not clickable at point (693, 562). Other element would receive the click: &lt;img src=&quot;https://cdn.retailrocket.net/api/1.0/partner/5b44733997a525089c03a156/item/254571/picture/?format=png&amp;amp;width=500&amp;amp;height=500&amp;amp;scale=both&quot; alt=&quot;&quot; onerror=&quot;retailrocket.widget.hideProduct(this)&quot;&gt;
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DRSERU0&apos;, ip: &apos;192.168.100.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c32a3f424ecee5c07a3619b9f43f3c9c" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/catalog/paris_polo_muzhchiny/paris_polo_regular_fit_color_AE0/&quot; class=&quot;product-main&quot;&gt;...&lt;/a&gt; is not clickable at point (693, 562). Other element would receive the click: &lt;img src=&quot;https://cdn.retailrocket.net/api/1.0/partner/5b44733997a525089c03a156/item/254571/picture/?format=png&amp;amp;width=500&amp;amp;height=500&amp;amp;scale=both&quot; alt=&quot;&quot; onerror=&quot;retailrocket.widget.hideProduct(this)&quot;&gt;
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DRSERU0&apos;, ip: &apos;192.168.100.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\7FE9~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c32a3f424ecee5c07a3619b9f43f3c9c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at page.productPages.CatalogProductsPage.goToFirstProductOnPage(CatalogProductsPage.java:42)
+	at test.CartTest.ProductFilteringBySelectedCategories(CartTest.java:130)
 </failure>
+    <system-out>test.data.second.name
+test.data.second.size
+test.data.second.color
+test.data.second.cost
+test.data.first.link
+</system-out>
   </testcase>
-  <testcase classname="test.CartTest" name="PlacingAnOrderForGoodsWithIncorrectData" time="0.288">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.UserCreater.withCredentialsFromProperty(UserCreater.java:11)
-	at test.CartTest.PlacingAnOrderForGoodsWithIncorrectData(CartTest.java:34)
-</failure>
-  </testcase>
-  <testcase classname="test.CartTest" name="ProductFilteringBySelectedCategories" time="0.309">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.ProductCreater.withCredentialsFromProperty(ProductCreater.java:22)
-	at test.CartTest.ProductFilteringBySelectedCategories(CartTest.java:124)
-</failure>
-  </testcase>
-  <testcase classname="test.CartTest" name="WriteIncorrectCityInDeliveryAdress" time="0.318">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.ProductCreater.withCredentialsFromProperty(ProductCreater.java:22)
-	at test.CartTest.WriteIncorrectCityInDeliveryAdress(CartTest.java:109)
-</failure>
-  </testcase>
-  <testcase classname="test.CartTest" name="WriteIncorrectPromocode" time="0.301">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.ProductCreater.withCredentialsFromProperty(ProductCreater.java:22)
-	at test.CartTest.WriteIncorrectPromocode(CartTest.java:92)
-</failure>
-  </testcase>
-  <testcase classname="test.UserTest" name="EditCityInAccount" time="0.289">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.UserCreater.withCredentialsFromProperty(UserCreater.java:11)
-	at test.UserTest.EditCityInAccount(UserTest.java:28)
-</failure>
-    <system-err>Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 30182
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 06, 2021 9:35:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
-  <testcase classname="test.UserTest" name="LoginUser" time="0.296">
-    <failure message="Could not initialize class service.TestDataReader" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class service.TestDataReader
-	at service.UserCreater.withCredentialsFromProperty(UserCreater.java:11)
-	at test.UserTest.LoginUser(UserTest.java:16)
-</failure>
-  </testcase>
+  <testcase classname="test.CartTest" name="WriteIncorrectCityInDeliveryAdress" time="9.837"/>
+  <testcase classname="test.CartTest" name="WriteIncorrectPromocode" time="11.45"/>
+  <testcase classname="test.UserTest" name="EditCityInAccount" time="13.473"/>
+  <testcase classname="test.UserTest" name="LoginUser" time="6.845"/>
 </testsuite>
